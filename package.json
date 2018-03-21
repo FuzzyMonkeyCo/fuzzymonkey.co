@@ -1,0 +1,12 @@
+{
+  "name": "fuzzymonkey.co",
+  "version": "2.0.0",
+  "description": "https://fuzzymonkey.co/",
+  "main": "index.js",
+  "repository": "git@github.com:FuzzyMonkeyCo/fuzzymonkey.co.git",
+  "author": "Pierre Fenoll <pierrefenoll@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "purifycss": "^1.2.6"
+  }
+}
