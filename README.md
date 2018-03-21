@@ -1,2 +1,2 @@
-# coveredci.com
-Website for CoveredCI
+# fuzzymonkey.co
+Website for FuzzyMonkeyCo

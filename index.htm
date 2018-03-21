@@ -1,110 +1,238 @@
-<!DOCTYPE html>
-<!-- Thanks verify.ly! -->
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-	<title>CoveredCI ~ test your Web services</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="stylesheet" type="text/css" href="/sttc/style.css" media="all"/>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
 
-    <style>
-      body { margin-top:20px; background:#000; }
-      .page-header { border-bottom: 1px solid #111; }
-      h1,h3 { color:#ccc; }
-      p { color:#aaa; }
-      .active_nav_href { text-decoration: none !important; }
-    .navbar-inverse {
-      display: none;
-    }
-    .container {
-        margin-top: 0 !important;
-    }
-    </style>
+		<meta name="description" content="Smart, automated bug hunting for your APIs. Run as part of Continuous Integration. Model-based, property-based, generative testing for JSON Web apps.">
+		<link rel="alternate" href="https://fuzzymonkey.co/" hreflang="en" charset=""/>
 
-    <script type="text/javascript">
-      window.$crisp=[];window.CRISP_WEBSITE_ID="f61c3509-d071-483f-9d97-b5fbff8ac006";
-      (function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
-    </script>
-  </head>
-  <body>
+		<title>Fuzzy Monkey</title>
+		<link href="/a/logo.png" rel="icon" type="image/png"/>
+		<link href="//fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
+		<link href="/a/c.css" rel="stylesheet"/>
+		<style type="text/css">
+			section.home-features { min-height:inherit; padding-bottom:inherit; }
+		</style>
 
-	<div class="navbar navbar-inverse navbar-fixed-top hidden-print">
-	  <div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
-		</button>
-		<a class="navbar-brand" href="/">
-		</a>
-	  </div>
-	  <div class="collapse navbar-collapse">
-	  </div>
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="@FuzzyMonkeyCo"/>
+		<meta name="twitter:title" content="Fuzzing for Web services | FuzzyMonkey">
+		<meta name="twitter:description" content="Smart, automated bug hunting for your APIs. Run as part of Continuous Integration. Model-based, property-based, generative testing for JSON Web apps.">
+		<meta name="twitter:image" content="https://pbs.twimg.com/profile_images/976083482706399235/IbduimqX_400x400.jpg"/>
+		<meta name="twitter:url" content="https://fuzzymonkey.co/">
+
+		<meta property="og:type" content="website"/>
+		<meta property="og:site_name" content="FuzzyMonkeyCo"/>
+		<meta property="og:title" content="Fuzzing for Web services | FuzzyMonkey">
+		<meta property="og:description" content="Smart, automated bug hunting for your APIs. Run as part of Continuous Integration. Model-based, property-based, generative testing for JSON Web apps.">
+		<meta property="og:image" content="https://fuzzymonkey.co/a/logo.png">
+		<meta property="og:url" content="https://fuzzymonkey.co/">
+		<meta property="fb:pages" content="2046552968956170"/>
+	</head>
+	<body data-controller="homepage">
+		<header class="header-mobile">
+			<a href="#" class="logo">
+				<span><img src="/a/logo.png" width="28" height="28" class="ac-logo" alt="FuzzyMonkeyCo logo"/></span>
+				Fuzzy&nbsp;Monkey
+			</a>
+			<ul class="nav-icon">
+				<li><a href="#form-email">Demo</a></li>
+			</ul>
+		</header>
+
+		<nav class="header header-fzzmnk header-scrolled">
+			<div class="content">
+				<div class="content-menu">
+					<a href="#" class="logo" style="margin-right:-60px">
+						<span><img src="/a/logo.png" width="28" height="28" class="ac-logo" alt="FuzzyMonkeyCo logo"/></span>
+					</a>
+					<ul class="main-nav">
+						<li><a href="#">Fuzzy Monkey</a></li>
+						<!-- <li><a href="/pricing">Pricing</a></li> -->
+						<li><a href="#form-email">Demo</a></li>
+						<!-- <li><a href="/docs">Docs</a></li> -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="header-bg">
+				<div></div>
+			</div>
+
+<section class="section-home home-header">
+	<div class="wrap">
+		<div class="text">
+			<h1><span>Uncover bugs in your Web services</span></h1>
+			<!-- <h2>Fuzzy Monkey generates tests for APIs &amp; executes them in minutes.</h2> -->
+			<h2>Generate chained API requests, find bugs in minutes <i>without writting tests</i>.</h2>
+			<ul><li><a href="#form-email" class="button button-big button-primary start_trial">Ask for a demo</a></li></ul>
+		</div>
+		<div class="illu">
+			<div class="phone">
+				<script src="https://asciinema.org/a/113463.js" id="asciicast-113463" async data-t=3 data-autoplay=1 data-speed=4 data-loop=1 data-theme="solarized-dark"></script>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-home home-features">
+	<div class="features-bg">
+		<div></div>
 	</div>
 
-	<div class="container">
-      <div class="page-header" style="text-align:center; margin-top:60px;">
-        <h1>Smart, automated bug hunting</h1>
-        <p class="lead">
-          <a href="/" class="active_nav_href" style="margin-right:50px; color:#ccc;">Overview</a>
-          <a href="/pricing" class="active_nav_href" style="margin-right:50px;">Pricing</a>
-          <a href="/about" class="active_nav_href" style="margin-right:50px;">More Info</a>
-        </p>
-      </div>
+	<div class="wrap">
+		<ul>
+			<li>
+				<div class="icon"><p style="font-size:6em;">🏝</p></div>
+				<div class="text">
+					<h4><strong>Write less</strong> tests</h4>
+					<p><strong>Generate <span>💡</span>smart tests from your docs</strong>
+						<br>The more complete your <a href="https://openapis.org">OpenAPI / Swagger / Postman</a> the smarter the tests!
+						<br>Leverage tools from a pre-existing ecosystem, no vendor lock-in.
+					</p>
+				</div>
+			</li>
+			<li>
+				<div class="icon"><p style="font-size:6em;">🐛</p></div>
+				<div class="text">
+					<h4>Find <strong>more bugs</strong></h4>
+					<p><strong>Simulate real-world user behavior</strong> with <a href="https://en.wikipedia.org/wiki/Model-based_testing">generative testing</a>
+						<br><span>🔎</span>Catch crashes, invalid data, wrong HTTP logic and security vulnerabilities before they hit production.</p>
+				</div>
+			</li>
+			<li>
+				<div class="icon"><p style="font-size:6em;">🤖</p></div>
+				<div class="text">
+					<h4>Adapted to <strong>your workflow</strong></h4>
+					<p><strong>Run hundreds of tests per push or hundreds of thousands overnight</strong>
+						<br>Once a bug is discovered it is automatically simplified into a <a href="https://stackoverflow.com/a/16970029"><span>⚡</span> minimized test case</a> so you can get to its root fast.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
 
-      <div class="row" style="color:#bbb">
-        <div class="col-md-7">
-          <div style="font-size:20px">
-            <b><a href="/">CoveredCI.com</a></b> allows you to <b>find the bugs hiding in your
-            Web services</b> and produces interactive reports in minutes.
-            On each git push our automated property-based testing engine
-            starts your service, generates specially-tailored JSON data and runs real-world
-            test cases <b>all simply from your JSON APIs documentation</b>.
-            Invalid data, security vulnerabilities, wrong HTTP logic and crashes are all
-            reported along with a minimal test case.
-          </div>
+<section id="form-email" class="section-home home-signup">
+	<div class="wrap">
+		<div class="subscribe-form">
+			<div class="title">
+				<h3>Enjoy adding features again!</h3>
+				<h4>tell me when it's ready</h4>
+			</div>
 
-          <h3>Features</h3>
-          <ul style="font-size:16px">
-            <li><b>Detects real-world bugs</b> that no amount of unit testing would uncover.</li>
-            <li>Detects CWEs and OWASP Top 10 vulnerabilities before they impact your users.</li>
-            <li>Runs hundreds of tests per push, and hundreds of thousands during the night.</li>
-            <li>Supports standard API documentation formats such as <a href="https://www.openapis.org">OpenAPI</a>, <a href="https://apiblueprint.org">API Blueprint</a> and others</li>
-            <li>Dramatically increases code coverage</li>
-            <li>Generates API clients in most general-purpose programming languages</li>
-            <li>Generates and deploy documentation websites for you</li>
-            <li>Generate easy-to-read report explaining issues and displaying relevant data in a
-              high level manner, to ensure readability by the widest (and potentially nontechnical)
-              audience.</li>
-          </ul>
-        </div>
-        <div class="col-md-5" style="font-size:14px">
-          <div style="text-align:center">
-            <img style="width:45%" alt="Argh!" src="/sttc/argh.jpg"/><br>
-            Don't be like this guy<br><br>
-            <b style="font-size:20px">Questions &#8594; <a href="mailto:hi@coveredci.co">hi@coveredci.co</a></b>
-          </div>
+	<form accept-charset="UTF-8" class="gui-form simple_form new_user" novalidate="novalidate">
+		<div class="gui-form--block">
+			<label class="gui-form--line" id="error_input_email">
+				<input  type="text"
+								placeholder="jane@acme.inc"
+								class="string email required"
+								name="user[email]"
+								data-parsley-required-message="Invalid Email"
+								data-parsley-type-message="Wrong email format"
+								data-parsley-class-handler="#error_input_email"
+								data-parsley-type="email"
+								data-required="true"
+								id="input-email"
+								>
+				<span class="label">your email</span>
+				<div class="border"></div>
+			</label>
+		</div>
 
-        </div>
-      </div>
+		<div class="gui-form--infobtn">
+			<div class="gui-form--infos">
+				<a href="mailto:ook@fuzzymonkey.co?subject=I+can't+wait!">Really can't wait? Tell us right now!</a>
+			</div>
+			<button type="submit" class="gui-form--btn submit-btn">
+				<span class="gui-form--btn-border">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+						<g class="btn-border"><path id="full" fill="#E8E8E8" d="M60,0v60h-7c-5.5,0-12.6-3.6-15.8-8.1L0,0H60z"/></g>
+						<g class="btn-bg"><path id="inside" fill="#FFFFFF" d="M38,51.3c3,4.2,9.8,7.7,15,7.7h8V1H1.9L38,51.3z"/></g>
+					</svg>
+				</span>
+				request a demo
+				<span class="arrow">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
+						<path fill-rule="evenodd" clip-rule="evenodd" fill="#BABABA" d="M5.7,6.7l2-2c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L5,4.7L3.6,3.3
+	c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l2,2C4.5,6.9,4.7,7,5,7C5.3,7,5.5,6.9,5.7,6.7z"/>
+					</svg>
+				</span>
+			</button>
+			<div class="border"></div>
+		</div>
+	</form>
+</div>
 
 	</div>
+	<!-- <div class="cross-lines"></div> -->
+</section>
 
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<div class="footer-fzzmnk homepage-footer">
+	<footer class="footer">
+		<section>
+			<div class="foot-side">
+				<div class="contact-social">
+					<a href="mailto:ook@fuzzymonkey.co" target="_blank" class="foot-social mail">
+						<div class="ico">
+							<svg x="30px" y="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+								<path fill="#BABABA" d="M11,18h8c0.5,0,1-0.4,1-1l0-3.8c0-0.5-0.3-0.7-0.8-0.4l-3.9,3.3c-0.1,0.1-0.2,0.1-0.3,0.1c-0.1,0-0.2,0-0.3-0.1l-3.9-3.3c-0.4-0.4-0.8-0.2-0.8,0.4V17C10,17.5,10.4,18,11,18z M8,11c0-1.1,0.9-2,2-2h10c1.1,0,2,0.9,2,2v7c0,1.1-0.9,2-2,2H10c-1.1,0-2-0.9-2-2V11z"/>
+							</svg>
+						</div>
+						<span class="txt">Contact us</span>
+					</a>
 
-  ga('create', 'UA-106576501-1', 'auto');
-  ga('send', 'pageview');
-    </script>
+					<a href="https://github.com/FuzzyMonkeyCo" target="_blank" class="foot-social github">
+						<div>
+							<svg x="30px" y="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+								<path fill="#424242" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+							</svg>
+						</div>
+					</a>
+					<a href="https://www.facebook.com/Fuzzy-Monkey-2046552968956170/" target="_blank" class="foot-social facebook">
+						<div>
+							<svg x="30px" y="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+								<path fill="#424242" d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/>
+							</svg>
+						</div>
+					</a>
+					<a href="https://twitter.com/FuzzyMonkeyCo" target="_blank" class="foot-social twitter">
+						<div>
+							<svg x="30px" y="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+								<path fill="#424242" d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+							</svg>
+						</div>
+					</a>
+				</div>
 
-  </body>
+			</div>
+
+			<div class="foot-links">
+				<ul class="foot-link">
+					<li><h4>FuzzyMonkeyCo</h4></li>
+					<li><a>26 rue Surcouf, 75007 Paris, France</a></li>
+				</ul>
+			</div>
+		</section>
+	</footer>
+</div>
+</div>
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="0dc2e924-b024-43fb-9b8d-9b41fcf90799";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+<script src="/a/j.js"></script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-106576501-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+	</body>
 </html>
